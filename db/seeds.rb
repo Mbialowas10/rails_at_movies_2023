@@ -2,6 +2,7 @@ require 'csv'
 
 Movie.delete_all
 ProductionCompany.delete_all
+Page.delete_all
 
 # Reset the auto-increment counter for the primary key (id)
 # This step is specific to SQLite and may not work with other databases
@@ -39,3 +40,15 @@ end
 
 puts "Created #{ProductionCompany.count} Production Companies"
 puts "Created #{Movie.count} Movies."
+
+Page.create(
+  title: 'About The Data',
+  content: 'The data powering this website was provied by IMDB Kaggle dataset.',
+  permalink: 'about_the_data'
+)
+
+Page.create(
+  title: 'Contact us',
+  content: 'If you like this website please reaach out to faker@notfaker.com',
+  permalink: 'contact'
+)
