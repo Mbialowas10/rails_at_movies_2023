@@ -12,21 +12,21 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title, style: "display: block", class: 'label' %>
+    <%= form.text_field :title, class: 'input' %>
   </div>
 
   <div>
-    <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
+    <%= form.label :content, style: "display: block", class: 'label'%>
+    <%= form.text_area :content, class: 'textarea' %>
   </div>
 
   <div>
-    <%= form.label :permalink, style: "display: block" %>
-    <%= form.text_field :permalink %>
+    <%= form.label :permalink, style: "display: block", class: 'label' %>
+    <%= form.text_field :permalink, class: 'input' %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'button is-primary' %>
   </div>
 <% end %>
