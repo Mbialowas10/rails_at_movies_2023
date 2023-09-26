@@ -30,6 +30,13 @@
   <strong>Duration</strong>
   <%= link_to movie.duration %>
 </p>
+<p>
+  <strong>
+    Genres:
+  </strong>
+  <!-- <%= #movie.genres.map(&:name).join(", ") %> -->
+  <%= movie.genres_list %>
+</p>
 
 <p>
   <strong>Production Company</strong>
